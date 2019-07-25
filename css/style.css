@@ -14,3 +14,9 @@ body{
   color: #222328;
   font-size: 100%;
 }
+
+header, #visual, #contents, footer{
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
