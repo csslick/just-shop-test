@@ -105,6 +105,10 @@ header nav .depth2 li {
 /* contents섹션 */
 #contents{
   height: 200px;
+  padding: 10px 0;
+  /* border: 1px solid #333; */
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 #contents #notice,
 #contents .banner{
@@ -117,7 +121,7 @@ header nav .depth2 li {
   width: 32%;
   float: left;
   margin-right: 2%;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
 }
 /* 마지막 칼럼 여백 제거 */
 #contents div:last-child{
