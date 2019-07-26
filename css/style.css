@@ -141,6 +141,10 @@ header nav .depth2 li {
   border-bottom: 1px solid #ccc;
   background: #eee;
 }
+.tab-group a.show{ 
+  background: #ddd;
+}
+
 .tab-group a:hover{ background: #ddd;}
 .tab-group a:first-child{
   border-right: 1px solid #ccc;
