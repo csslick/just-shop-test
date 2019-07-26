@@ -38,7 +38,7 @@ header nav .depth1 > li{
   float: left;
   width: 120px;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* 1단계 메뉴 hover */
 header nav .depth1 > li:hover{
@@ -46,18 +46,29 @@ header nav .depth1 > li:hover{
 }
 /* 1단계 hover시 2단계 메뉴 표시 */
 header nav .depth1 > li:hover .depth2{
-  display: block;
+  /* display: block; */
+  height: 180px;
+  opacity: 1;
 }
 
 header nav .depth1 > li a{
   display: block;
   padding: 10px 0;
 }
+header nav .depth1 > li > a{
+  font-size: 18px;
+  font-weight: bold;  
+}
+
 /* 2단계 메뉴(기본 비표시) */
 header nav .depth2{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 25px;
-  display: none;
+  /* display: none; */
+  height: 0;
+  opacity: 0;
+  transition: 0.4s;
+  overflow: hidden;
 }
 /* hover */
 header nav .depth2 > li:hover{
