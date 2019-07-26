@@ -18,7 +18,7 @@ body{
 header, #visual, #contents, footer{
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 header{
@@ -79,3 +79,59 @@ header nav .depth2 li {
   background: #eee;
 }
 
+/* contents섹션 */
+#contents{
+  height: 200px;
+}
+#contents #notice,
+#contents .banner{
+  /* 전체 폭1200 = 100% 
+    칼럼여백수 = 컬럼수 - 1
+    컬럼 여백 2% * 2(컬럼수-1) = 4%
+    폭 = 96%
+    각 칼럼의 너비(32%) = 96 / 3
+  */
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  border: 1px solid #ccc;
+}
+/* 마지막 칼럼 여백 제거 */
+#contents div:last-child{
+  margin-right: 0;
+}
+.banner img{ width: 100%;}
+
+/* 공지사항,갤러리 탭버튼 */
+.tab-group{ overflow: hidden;}
+.tab-group a{
+  display: block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #ccc;
+  background: #eee;
+}
+.tab-group a:first-child{
+  border-right: 1px solid #ccc;
+}
+
+/* 공지사항 목록 */
+#notice-list{ 
+  padding: 1em;
+}
+#notice-list li { 
+  overflow: hidden;
+  padding: 3px 0;
+}
+#notice-list li .title{ float: left;}
+#notice-list li .date{ float: right;}
+
+
+
+
+
+footer{
+  clear: both;
+}
