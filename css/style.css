@@ -79,6 +79,29 @@ header nav .depth2 li {
   background: #eee;
 }
 
+/* 비주얼 슬라이더 영역 */
+#visual{
+  position: relative;
+  width: 1200px; height: 300px;
+  /* border: 1px solid green; */
+}
+.slider{
+  position: relative;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+.slider > .sliders{
+  position: relative;
+  width: 100%;
+  height: 300%;
+  /* border: 2px solid red; */
+  top: 0;
+  transition: 0.5s;
+}
+.sliders img{ display: block;}
+
+
+
 /* contents섹션 */
 #contents{
   height: 200px;
@@ -147,4 +170,23 @@ header nav .depth2 li {
 
 footer{
   clear: both;
+  height: 100px;
+  padding: 20px;
+  padding-top: 40px;
+  background: #eee;
+}
+footer .footer-logo,
+footer .address,
+footer .sns{
+  width: 33.33%;
+  float: left;
+}
+footer .address,
+footer .sns{
+  text-align: center;
+}
+footer .sns li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
 }
