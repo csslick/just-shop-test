@@ -194,8 +194,13 @@ footer .address,
 footer .sns{
   text-align: center;
 }
+footer .address{
+  /* border: 1px solid red; */
+  margin-top: -10px;
+}
 footer .sns li{
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
 }
+footer .sns li:last-child{ margin-right: 0;}
