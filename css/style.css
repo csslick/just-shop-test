@@ -27,7 +27,7 @@ body {
   width: 1200px;
   height: 100px;
   margin: 0 auto;
-  outline: 1px solid #333;
+  /* outline: 1px solid #333; */
   display: flex;
   justify-content: space-between;
   z-index: 999;
@@ -154,7 +154,8 @@ body {
   text-align: center;
   padding: 15px 0;
 }
-.gallery img {
+
+#main-contents .gallery img {
   width: 120px;
 }
 
@@ -180,6 +181,7 @@ body {
   padding: 20px;
   display: none;
 }
+
 .modal-close-btn {
   position: absolute;
   bottom: 20px;

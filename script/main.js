@@ -25,15 +25,30 @@ $(function(){
     $('.notice ').addClass('show');
     // 나머지 비표시
     $('.gallery').removeClass('show');
+
+    // tab button style
+    $('.tab-group a').removeClass('show');
+    $(this).addClass('show');
   })
 
   $('#tab2').click(function(){
     $('.gallery').addClass('show');
     $('.notice').removeClass('show');
+
+    // tab button style
+    $('.tab-group a').removeClass('show');
+    $(this).addClass('show');
   })
   
   // 모달창(레이어팝업창)
   // 1.공지사항 첫번째 글을 클릭하면 모달창 표시
-  // 2.모달창 닫기 버튼을 클리하면 모달창 비표시
+  $('.notice li:first').click(function(){
+    $('#modal').addClass('show');
+  })
+
+  // 2.모달창 닫기 버튼을 클리하면 모달창 비표시  
+  $('.modal-close-btn').click(function(){
+    $('#modal').removeClass('show');
+  })
 
 }); // $
