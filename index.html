@@ -70,10 +70,10 @@
   <section id="main-contents">
     <div class="col1">
       <div class="tab-group">
-        <a href="#" class="show">공지사항</a>
-        <a href="#">갤러리</a>
+        <a href="#" id="tab1" class="show">공지사항</a>
+        <a href="#" id="tab2">갤러리</a>
       </div>
-      <div class="notice">
+      <div class="notice show">
         <ul>
           <li>
             <span class="title">공지사항 제목...</span>
@@ -94,17 +94,32 @@
         </ul>
       </div>
       <div class="gallery">
-        <img src="" alt="">
+        <img src="https://via.placeholder.com/133" alt="1">
+        <img src="https://via.placeholder.com/133" alt="1">
+        <img src="https://via.placeholder.com/133" alt="1">
       </div>
     </div><!-- 공지사항, 갤러리 -->
     <div class="col2">
-      배너 C.3
+      <a href="#">
+        <img src="images/content-banner1.jpg" alt="DRESS 1+1 보러가기">
+      </a>
     </div>
     <div class="col3">
-      바로가기 C.4
+      <a href="#">
+        <img src="images/content-banner2.jpg" alt="모바일앱 설치시 무료배송 쿠폰을 드립니다!
+        앱 설치 바로가기">
+      </a>
     </div>
   </section>
 
   <!-- 푸터 -->
+
+
+  <!-- 팝업창 -->
+  <div id="modal">
+    <h1>타이틀</h1>
+    <p>공지사항 내용...</p>
+    <button class="modal-close-btn">닫기</button>
+  </div>
 </body>
 </html>
