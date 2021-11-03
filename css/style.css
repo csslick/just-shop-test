@@ -30,6 +30,7 @@ body {
   outline: 1px solid #333;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 
 #main-header h1 {
@@ -78,3 +79,65 @@ body {
   background: #efefef;
 }
 
+/* 메인 비주얼 */
+#main-visual {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+#main-visual .slider {
+  width: 100%;
+  height: 100%;
+  /* outline: 2px solid red; */
+  overflow: hidden;
+}
+
+#main-visual .slider .sliders {
+  /* 0 첫째장, -300px 둘째장, -600px 세째장 */
+  margin-top: 0;
+  /* 애니메이션 */
+  transition-duration: 1s;
+}
+
+#main-visual .slider .sliders img {
+  display: block;
+}
+
+/* 메인 콘텐츠 */
+#main-contents {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  outline: 2px solid #333;
+  display: flex;
+}
+#main-contents > div {
+  outline: 1px solid #666;
+  width: 400px;
+}
+
+/* 탭 버튼 */
+.tab-group {
+  display: flex;
+}
+
+.tab-group  > a {
+  display: block;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.tab-group  > a.show {
+  background: #ccc;
+}
+
+.notice ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 4px;
+  border-bottom: 1px solid #ccc;
